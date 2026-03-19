@@ -1,0 +1,70 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPipkbRa6Fy+6j80Jecrve/",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/CzhD-arch/comsci_fa2/blob/main/maxnum\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6VC6GJWfan4a",
+        "outputId": "096d3b80-4543-4ac3-ea7f-420395cc82e9"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter first number:6.7\n",
+            "Enter second number:8.9\n",
+            "Enter third number:9.8\n",
+            "In conclusion, the largest number is 9.8\n"
+          ]
+        }
+      ],
+      "source": [
+        "num1 = float(input(\"Enter first number:\"))\n",
+        "num2 = float(input(\"Enter second number:\"))\n",
+        "num3 = float(input(\"Enter third number:\"))\n",
+        "\n",
+        "def find_max(numbers):\n",
+        "  max_num = numbers[0]\n",
+        "  for num in numbers:\n",
+        "    if num > max_num:\n",
+        "      max_num = num\n",
+        "  return max_num\n",
+        "\n",
+        "numbers_list = [num1, num2, num3]\n",
+        "largest = find_max(numbers_list)\n",
+        "\n",
+        "print(f\"In conclusion, the largest number is {largest}\")"
+      ]
+    }
+  ]
+}
